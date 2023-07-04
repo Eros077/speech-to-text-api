@@ -1,6 +1,6 @@
 import openai
 # Load your API key from an environment variable or secret management service
-openai.api_key = "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"
+openai.api_key = "your_API_key"
 
 # list engines
 engines = openai.Engine.list()
