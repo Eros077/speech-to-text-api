@@ -1,0 +1,15 @@
+This project requires sending requests to two OpenAI 
+models APIs: Whisper and ChatGPT.
+
+To use these APIs, you need to create an OpenAI account and obtain an 
+API key. Please note that there is a cost associated with using the OpenAI 
+services, but it is relatively affordable.
+
+To get started, you can visit the OpenAI website and sign up for an account. 
+Once you have your account set up, you will need to generate an API key. 
+The OpenAI documentation provides detailed instructions on how to obtain 
+the API key and how to use it to make API requests.
+
+I recommend referring to the OpenAI documentation for more information on 
+using the Whisper and ChatGPT models and how to integrate them into your 
+project.

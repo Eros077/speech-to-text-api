@@ -1,0 +1,27 @@
+This project utilizes Firebase, a Google Backend as a Service (BaaS) 
+platform. Firebase is used for the database, specifically Firestore for 
+data storage and Firebase Storage for storing audio files.
+
+The API endpoint receives a JSON payload in the following format:
+{
+    "elderly_id": "Mi8vipcv6oyLMZk8ZauU",
+    "audio_url": "https://theAudioUrl.com/storage/audio3.mp3",
+    "email": "example@email.com"
+}
+
+In Firestore:
+    - Create a collection named "elderlyUsers" with at least one document. 
+    The name of the document corresponds to the user ID.
+    - Within the document, there must be at least one field with the key 
+    "residenceId" and its value is the name of the corresponding document 
+    in the "residences" collection.
+    - Create a collection named "residences" with at least one document.
+    - Create a collection named "interviews" (which can be empty).
+
+In Firebase Storage:
+    - Ensure you have a Firebase Storage project set up. 
+    - Upload an audio file and obtain its URL.
+
+After completing these steps (and having the API running, at least on 
+localhost), you're ready to make a request with the aforementioned 
+JSON payload in the request body.
